@@ -1,0 +1,19 @@
+{% extends "cbvapp/parent.html" %}
+<html>
+<body>
+  {% block for_child %}
+  <h1 style="color:red">student details are</h1>
+  <br>
+  <h2>name:{{student.name}}</h2>
+  <br>
+  <h2>number:{{student.number}}</h2>
+  <br>
+  <h2>marks:{{student.marks}}</h2>
+  <br>
+  <h2>place:{{studen.place}}</h2>
+  <h2><a href="/update/{{student.id}}" class="btn btn-warning">update</a></h2>
+  <h2><a href="/delete/{{student.id}}" class="btn btn-danger">delete</a></h2>
+  {% endblock %}
+</body>
+</html>
+    

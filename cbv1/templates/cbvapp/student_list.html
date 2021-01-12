@@ -1,0 +1,18 @@
+{% extends 'cbvapp/parent.html' %}
+<html>
+<body>
+  <center>
+    {% block for_child %}
+    <h1><u>list of student</u></h1>
+    {% for x in student_list %}
+    <li type="I">
+      <al>
+        <a href="/{{x.id}}">{{x.name}}'s Details</a><br>
+        <a href="/Update/{{x.id}}">Update</a><br>
+      </al>
+    </li>
+    {% endfor %}
+    {% endblock %}
+  </center>
+  </body>
+</html>
